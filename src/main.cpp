@@ -1,3 +1,7 @@
+// main.cpp
+// IMU Test Code
+// This code initializes the IMU, performs calibration, and continuously reads and prints IMU data (accelerometer, gyroscope, and orientation) to the serial console.
+
 #include "IMU.h"
 #include "config.h"
 #include "mbed.h"
