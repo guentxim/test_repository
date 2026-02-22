@@ -10,8 +10,7 @@
 
 static BufferedSerial pc(BBOP_LOG_COM_UART_TX_PIN, BBOP_LOG_COM_UART_RX_PIN, 115200);
 
-static void pc_printf(const char *fmt, ...)
-{
+static void pc_printf(const char *fmt, ...) {
     char buf[256];
     va_list args;
     va_start(args, fmt);
@@ -23,8 +22,7 @@ static void pc_printf(const char *fmt, ...)
     }
 }
 
-int main()
-{
+int main() {
     pc_printf("\n\n=== IMU Test Started ===\n");
 
     IMU imu(BBOP_IMU_SDA_PIN, BBOP_IMU_SCL_PIN);
