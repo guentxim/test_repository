@@ -22,7 +22,7 @@ static void pc_printf(const char *fmt, ...) {
     }
 }
 
-int main() {
+int main_imu() {
     pc_printf("\n\n=== IMU Test Started ===\n");
 
     IMU imu(BBOP_IMU_SDA_PIN, BBOP_IMU_SCL_PIN);
